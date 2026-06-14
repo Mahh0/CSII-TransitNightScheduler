@@ -12,7 +12,7 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("NightVehiclesMod")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96dd595b659c12125f86141a9e8da408905852b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d33f1939ea3e7b3ecacfb8eea11ab4d6665096ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("NightVehiclesMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NightVehiclesMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
