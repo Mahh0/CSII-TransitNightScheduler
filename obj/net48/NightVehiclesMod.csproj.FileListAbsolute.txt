@@ -7,3 +7,4 @@
 /home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.csproj.CoreCompileInputs.cache
 /home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.dll
 /home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.pdb
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.sourcelink.json

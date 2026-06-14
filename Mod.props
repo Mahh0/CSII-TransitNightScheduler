@@ -12,6 +12,7 @@
   <EntitiesVersion>1.3.10</EntitiesVersion>
   <EntityPackagePath>$(UnityModProjectPath)/Library/PackageCache/com.unity.entities@$(EntitiesVersion)/Unity.Entities/SourceGenerators</EntityPackagePath>
   <ModPostProcessorPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Content/Game/.ModdingToolchain/ModPostProcessor/ModPostProcessor.exe</ModPostProcessorPath>
+  <ModPublisherPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Content/Game/.ModdingToolchain/ModPublisher/ModPublisher.exe</ModPublisherPath>
   <AssemblySearchPaths>$(AssemblySearchPaths);$(ManagedPath)</AssemblySearchPaths>
     <MSCORLIBPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Managed/mscorlib.dll</MSCORLIBPath>
 </PropertyGroup>

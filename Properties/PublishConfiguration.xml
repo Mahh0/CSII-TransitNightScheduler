@@ -1,9 +1,9 @@
 ﻿<Publish>
 	<ModId Value="" />
-	<DisplayName Value="Transit Night Scheduler" />
+	<DisplayName Value="Transit Night Scheduler (BETA)" />
 	<ShortDescription Value="Configure the number of vehicles per transit line during night hours. Vehicles automatically return to depot at night and come back during the day." />
 	<LongDescription>
-		# Transit Night Scheduler
+		# Transit Night Scheduler (BETA)
 
 		Configure the number of vehicles for each public transit line during night hours.
 
@@ -26,17 +26,17 @@
 
 		* Lines are identified by their transport type and route number (e.g. Tram 1). If you change the route number, the night configuration will be lost.
 		* The mod only affects lines set to Day + Night schedule.
+		* Made with Claude :) (I'm not a developer)
 	</LongDescription>
 	<Thumbnail Value="Properties/Thumbnail.png" />
 	<Screenshot Value="" />
-	<Tag Value="Gameplay" />
-	<Tag Value="Transportation" />
+	<Tag Value="Code Mod" />
 	<ForumLink Value="" />
 	<ModVersion Value="1.0.0" />
 	<GameVersion Value="1.*.*" />
 	<Dependency Id="" />
 	<RequiredDLC Value="" />
 	<ChangeLog Value="Initial release" />
-	<ExternalLink Type="github" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/Mahh0/CSII-TransitNightScheduler" />
 	<AccessLevel Value="Public" />
 </Publish>

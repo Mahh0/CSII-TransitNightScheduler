@@ -109,8 +109,7 @@ add a targets similarly to these ones below:
     <RemoveDir Directories="$(DeployDir)" />
     <Copy SourceFiles="@(FilesToDeploy)" DestinationFiles="@(FilesToDeploy->'$(DeployDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
   </Target>
-
-
+  
   <Target Name="PublishGetFullPaths" BeforeTargets="Publish">
     <PropertyGroup>
       <ModPublisherFullPath Condition="'$(ModPublisherPath)'!=''">$([System.IO.Path]::GetFullPath('$(ModPublisherPath)'))</ModPublisherFullPath>
@@ -159,4 +158,20 @@ add a targets similarly to these ones below:
           EnvironmentVariables="CSII_USERDATAPATH=/run/media/D/SteamLibrary/steamapps/compatdata/949230/pfx/drive_c/users/steamuser/AppData/LocalLow/Colossal Order/Cities Skylines II" />
   </Target>
 
+  <Target Name="CustomModPublisherConfig" AfterTargets="ModPublisherConfig">
+    <XmlPeek XmlInputPath="$(ProjectDir)/Properties/PdxCredentials.xml"
+             Query="/PdxCredentials/Email/text()">
+      <Output TaskParameter="Result" ItemName="PdxEmail" />
+    </XmlPeek>
+    <XmlPeek XmlInputPath="$(ProjectDir)/Properties/PdxCredentials.xml"
+             Query="/PdxCredentials/Password/text()">
+      <Output TaskParameter="Result" ItemName="PdxPassword" />
+    </XmlPeek>
+    <PropertyGroup>
+      <FakePublisherDllPath>$([System.IO.Path]::ChangeExtension($(ModPublisherFullPath), '.dll'))</FakePublisherDllPath>
+      <RawPublisherArgs>$([System.Text.RegularExpressions.Regex]::Replace($(ModPublisherArgs), '^".*?"\s*', ''))</RawPublisherArgs>
+      <CleanedPublisherArgs>$(RawPublisherArgs.Replace('\', '/'))</CleanedPublisherArgs>
+      <ModPublisherArgs>dotnet "$(FakePublisherDllPath)" $(CleanedPublisherArgs) -e "@(PdxEmail)" -p '@(PdxPassword)' --noAutoLogin</ModPublisherArgs>
+    </PropertyGroup>
+  </Target>
 </Project>

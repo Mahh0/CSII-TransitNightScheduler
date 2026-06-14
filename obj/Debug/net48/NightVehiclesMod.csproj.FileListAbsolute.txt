@@ -7,3 +7,4 @@
 /home/maho/Downloads/NightVehiclesMod/bin/Debug/net48/NightVehiclesMod.pdb
 /home/maho/Downloads/NightVehiclesMod/obj/Debug/net48/NightVehiclesMod.dll
 /home/maho/Downloads/NightVehiclesMod/obj/Debug/net48/NightVehiclesMod.pdb
+/home/maho/Downloads/NightVehiclesMod/obj/Debug/net48/NightVehiclesMod.sourcelink.json
