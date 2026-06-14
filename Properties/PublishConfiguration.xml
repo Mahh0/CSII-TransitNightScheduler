@@ -1,0 +1,42 @@
+﻿<Publish>
+	<ModId Value="" />
+	<DisplayName Value="Transit Night Scheduler" />
+	<ShortDescription Value="Configure the number of vehicles per transit line during night hours. Vehicles automatically return to depot at night and come back during the day." />
+	<LongDescription>
+		# Transit Night Scheduler
+
+		Configure the number of vehicles for each public transit line during night hours.
+
+		## Features
+
+		* Add a **night vehicles slider** directly in the transit line panel (only visible for Day+Night lines)
+		* Vehicles automatically **return to depot** at night and **come back** during the day
+		* Configurable **night start and end hours** in the mod settings
+		* Settings are **saved per city** and persist between sessions
+		* Enable/disable the mod globally from settings
+
+		## How to use
+
+		1. Select a transit line configured as **Day + Night**
+		2. Use the **Night Vehicles** slider that appears below the Vehicles slider
+		3. Set the desired number of vehicles for night hours
+		4. Configure night hours in **Options > Mods > Transit Night Scheduler**
+
+		## Notes
+
+		* Lines are identified by their transport type and route number (e.g. Tram 1). If you change the route number, the night configuration will be lost.
+		* The mod only affects lines set to Day + Night schedule.
+	</LongDescription>
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<Screenshot Value="" />
+	<Tag Value="Gameplay" />
+	<Tag Value="Transportation" />
+	<ForumLink Value="" />
+	<ModVersion Value="1.0.0" />
+	<GameVersion Value="1.*.*" />
+	<Dependency Id="" />
+	<RequiredDLC Value="" />
+	<ChangeLog Value="Initial release" />
+	<ExternalLink Type="github" Url="" />
+	<AccessLevel Value="Public" />
+</Publish>

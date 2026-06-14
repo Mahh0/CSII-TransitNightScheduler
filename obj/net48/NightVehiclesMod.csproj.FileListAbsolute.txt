@@ -1,0 +1,9 @@
+/home/maho/Downloads/NightVehiclesMod/bin/net48/NightVehiclesMod.dll
+/home/maho/Downloads/NightVehiclesMod/bin/net48/NightVehiclesMod.pdb
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.csproj.AssemblyReference.cache
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.GeneratedMSBuildEditorConfig.editorconfig
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.AssemblyInfoInputs.cache
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.AssemblyInfo.cs
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.csproj.CoreCompileInputs.cache
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.dll
+/home/maho/Downloads/NightVehiclesMod/obj/net48/NightVehiclesMod.pdb

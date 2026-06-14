@@ -1,0 +1,39 @@
+﻿<Project>
+
+<PropertyGroup>
+  <OutputType>Library</OutputType>
+  <TargetFramework>net48</TargetFramework>
+  <LangVersion>9.0</LangVersion>
+  <ModPropsFile>$(MSBuildThisFileFullPath)</ModPropsFile>
+  <ManagedPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Managed</ManagedPath>
+  <UserDataPath>/run/media/D/SteamLibrary/steamapps/compatdata/949230/pfx/drive_c/users/steamuser/AppData/LocalLow/Colossal Order/Cities Skylines II</UserDataPath>
+  <LocalModsPath>$(UserDataPath)/Mods</LocalModsPath>
+  <UnityModProjectPath>/home/maho/.cache/CS2Modding</UnityModProjectPath>
+  <EntitiesVersion>1.3.10</EntitiesVersion>
+  <EntityPackagePath>$(UnityModProjectPath)/Library/PackageCache/com.unity.entities@$(EntitiesVersion)/Unity.Entities/SourceGenerators</EntityPackagePath>
+  <ModPostProcessorPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Content/Game/.ModdingToolchain/ModPostProcessor/ModPostProcessor.exe</ModPostProcessorPath>
+  <AssemblySearchPaths>$(AssemblySearchPaths);$(ManagedPath)</AssemblySearchPaths>
+    <MSCORLIBPath>/run/media/D/SteamLibrary/steamapps/common/Cities Skylines II/Cities2_Data/Managed/mscorlib.dll</MSCORLIBPath>
+</PropertyGroup>
+
+<ItemGroup>
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.SystemAPI.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.SystemAPI.QueryBuilder.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.LambdaJobs.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.Common.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.SystemAPI.Query.dll" />
+  <Analyzer Include="$(EntityPackagePath)/SystemGenerator.EntityQueryBulkOperations.dll" />
+  <Analyzer Include="$(EntityPackagePath)/AspectGenerator.dll" />
+  <Analyzer Include="$(EntityPackagePath)/Common.dll" />
+  <Analyzer Include="$(EntityPackagePath)/JobEntityGenerator.dll" />
+  <Analyzer Include="$(EntityPackagePath)/Unity.Entities.Analyzer.dll" />
+  <Analyzer Include="$(EntityPackagePath)/Unity.Entities.Analyzer.CodeFixes.dll" />
+</ItemGroup>
+
+<ItemGroup>
+  <None Remove="Logs\**" />
+  <None Remove="Library\**" />
+</ItemGroup>
+
+</Project>
