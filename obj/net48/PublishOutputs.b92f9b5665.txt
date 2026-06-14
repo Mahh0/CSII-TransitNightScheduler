@@ -1,2 +1,0 @@
-/home/maho/Downloads/NightVehiclesMod/bin/net48/NightVehiclesMod.dll
-/home/maho/Downloads/NightVehiclesMod/bin/net48/NightVehiclesMod.pdb

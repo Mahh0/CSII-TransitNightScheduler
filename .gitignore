@@ -1,1 +1,7 @@
+bin/
+obj/
+.idea/
+NightVehiclesSlider/node_modules/
 Properties/PdxCredentials.xml
+.DS_Store
+Thumbs.db
