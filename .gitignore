@@ -1,6 +1,7 @@
 bin/
 obj/
 .idea/
+.tmp/
 NightVehiclesSlider/node_modules/
 Properties/PdxCredentials.xml
 .DS_Store

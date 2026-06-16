@@ -120,12 +120,19 @@ namespace NightVehiclesMod
                     }
 
                     int targetCount = NightVehicleSettings.LineNightVehicles[lineKey];
-                    float estimatedDuration = transportLine.m_VehicleInterval * targetCount;
+                    float lineDuration = RouteDurationCalculator.CalculateStableDuration(
+                        EntityManager, entity, transportLineData);
+                    if (lineDuration <= 0f)
+                    {
+                        Mod.log.Warn($"Line {lineKey}: could not compute stable duration, skipping");
+                        continue;
+                    }
 
+                    Mod.log.Info($"Line {lineKey}: stableDuration={lineDuration} targetCount={targetCount}");
                     targetAdjustment = VehicleCountCalculator.CalculateAdjustmentFromVehicleCount(
                         targetCount,
                         transportLineData.m_DefaultVehicleInterval,
-                        estimatedDuration,
+                        lineDuration,
                         modifierDatas,
                         policySliderData);
                 }
